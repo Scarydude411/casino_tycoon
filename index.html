@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Tycoon</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Dropdown Menu -->
+  <div class="dropdown">
+    <button class="dropdown-toggle">Menu</button>
+    <div class="dropdown-content">
+      <button id="saveButton">Save Game</button>
+      <button id="resetButton">Reset Game</button>
+    </div>
+  </div>
+
+  <h1>Casino Tycoon</h1>
+  <p>Chips: <span id="chips">0</span></p>
+  
+  <!-- Main Section -->
+  <div id="mainSection">
+    <!-- Earn Chips Button -->
+    <button id="earnButton">
+      <img src="poker-chip.png" alt="Earn Chips" />
+    </button>
+    <!-- Upgrade Button -->
+    <button id="upgradeButton">
+      <img src="arrow.png" alt="Upgrade" />
+    </button>
+    <p>Upgrade Cost: <span id="upgradeCost">10</span> Chips</p>
+  </div>
+
+  <!-- Auto-Clicker Section (Hidden Initially) -->
+  <div id="autoClickerSection" style="display: none;">
+    <p>Auto-Clicker: <span id="autoClickerSpeed">1 chip / 5 seconds</span></p>
+    <button id="autoClickerUpgradeButton">Upgrade Auto-Clicker (Cost: <span id="autoClickerUpgradeCost">250</span> Chips)</button>
+  </div>
+
+  <!-- Gamble Section (Hidden Initially) -->
+  <div id="gambleSection" style="display: none;">
+    <p>Feeling lucky? Enter your bet and press Gamble!</p>
+    <input type="number" id="gambleInput" placeholder="Enter chips to gamble" min="1" />
+    <button id="gambleButton">Gamble</button>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
